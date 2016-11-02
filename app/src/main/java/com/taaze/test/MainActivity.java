@@ -10,19 +10,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
-
+    int a;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        a=0;
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "I HAVE CHANGE!!!", Snackbar.LENGTH_SHORT)
+                Snackbar.make(view, "I HAVE CHEertertertertertANGE!!!", Snackbar.LENGTH_SHORT)
                         .setAction("Action", null).show();
             }
         });
